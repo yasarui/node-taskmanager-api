@@ -1,0 +1,53 @@
+###
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/users/5ec5072913854b1ca047d321
+
+###
+POST http://localhost:3000/api/users/
+Content-Type: application/json
+
+{
+    "name":"Asmaa Yasar",
+    "email":"asmaayasar@gmail.com",
+    "password":"P@ssw0rd",
+    "age":4
+}
+
+###
+PATCH http://localhost:3000/api/users/5ec5072913854b1ca047d321
+Content-Type: application/json
+
+{
+    "name": "Asmaa Seyadu"
+}
+
+
+###
+DELETE http://localhost:3000/api/users/5ec4ff7f8439631fa4f3fcb5
+
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks/5ec503d4d471bf123894ffe5
+
+###
+POST http://localhost:3000/api/tasks/
+Content-Type: application/json
+
+{
+  "description":"Need to Learn Angular js"
+}
+
+###
+PATCH http://localhost:3000/api/tasks/5ec503d4d471bf123894ffe5
+Content-Type: application/json
+
+{
+  "description":"Need to Learn Angular"
+}
+
+###
+DELETE http://localhost:3000/api/tasks/5ec503d4d471bf123894ffe5
